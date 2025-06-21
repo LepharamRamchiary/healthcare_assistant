@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthcare Assistant</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="chat-container">
+      <div class="chat-header">
+        <h1>Healthcare Assistant</h1>
+        <p>Your personal AI health companion</p>
+        <div class="controls">
+          <button
+            class="control-btn"
+            onclick="showHistory()"
+            title="View History"
+          >
+            History
+          </button>
+          <button
+            class="control-btn clear-btn"
+            onclick="clearHistory()"
+            title="Clear Conversation"
+          >
+            Clear
+          </button>
+        </div>
+      </div>
+
+      <div class="chat-messages" id="chatMessages">
+        <div class="no-messages">
+          Welcome! Ask me about your health concerns, symptoms, or general
+          wellness advice.
+        </div>
+      </div>
+
+      <div class="typing-indicator" id="typingIndicator">
+        <div class="message-avatar assistant-avatar">🤖</div>
+        <span>Assistant is typing</span>
+        <div class="typing-dots">
+          <div class="typing-dot"></div>
+          <div class="typing-dot"></div>
+          <div class="typing-dot"></div>
+        </div>
+      </div>
+
+      <div class="chat-input-container">
+        <div class="chat-input-group">
+          <input
+            type="text"
+            class="chat-input"
+            id="messageInput"
+            placeholder="Describe your symptoms or ask a health question..."
+            maxlength="500"
+          />
+          <button class="send-btn" id="sendBtn" onclick="sendMessage()">
+            Send
+          </button>
+        </div>
+      </div>
+
+      <div class="status-bar">
+        <span
+          ><span class="conversation-count" id="conversationCount">0</span>
+          messages in this session</span
+        >
+        <span id="statusText">Ready to help</span>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </body>
+</html>
