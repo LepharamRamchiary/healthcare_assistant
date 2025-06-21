@@ -11,3 +11,44 @@
 </div>
 <a href="https://healthcare-assistant-three.vercel.app" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #0366d6; color: white; border-radius: 6px; text-decoration: none;">🔗 Live Project</a>
 
+## Features
+- **Conversational Interface:** Natural, empathetic conversations about health concerns
+- **Context Awareness:** Remembers previous conversations within the session
+- **Symptom Guidance:** Provides suggestions for common over-the-counter remedies
+- **Professional Boundaries:** Always recommends consulting healthcare professionals
+- **Responsive Design:** Works seamlessly on desktop and mobile devices
+- **Privacy Focused:** No data stored permanently, session-based conversations
+- **Real-time Responses:** Powered by Google's fast Gemini 1.5 Flash model
+
+## AI Model Information
+**Google Gemini 1.5 Flash**
+
+This application uses Google Gemini 1.5 Flash, Google's latest and most efficient AI model:
+
+**Model Specifications:**
+
+- Model Name: ```gemini-1.5-flash```
+- Context Window: Up to 1 million tokens
+- Multimodal: Supports text, images, video, and audio
+- Speed: Optimized for fast responses
+- Capabilities: Advanced reasoning, code generation, creative writing
+
+**Free Tier Benefits:**
+
+- 15 requests per minute (RPM)
+- 1 million tokens per minute (TPM)
+- 1,500 requests per day
+- No cost for usage within these limits
+- Perfect for personal projects and small applications
+
+## Technology Stack
+
+- **Backend**: Python Flask
+- **AI Model**: Google Gemini 1.5 Flash (Free Tier)
+- **Frontend**: HTML, CSS, JavaScript
+- **Session Management**: Flask Sessions
+- **Environment**: Python-dotenv for configuration
+- **Deployment**: Vercel-ready configuration
+
+
+
